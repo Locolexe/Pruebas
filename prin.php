@@ -3,16 +3,14 @@
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Recibir datos del formulario HTML
-        $nombre = $_POST['nombre'];
-        $email = $_POST['email'];
-        $mensaje = $_POST['mensaje'];
+        $corre = $_POST['Corr1'];
+        $pass = $_POST['Pass1'];
 
         // Validar y procesar los datos recibidos
-        if (!empty($nombre) && !empty($email) && !empty($mensaje)) {
+        if (!empty($corre) && !empty($pass)) {
             // Aquí puedes agregar el código para procesar los datos, como guardarlos en una base de datos
-            echo "Nombre: " . htmlspecialchars($nombre) . "<br>";
-            echo "Email: " . htmlspecialchars($email) . "<br>";
-            echo "Mensaje: " . htmlspecialchars($mensaje) . "<br>";
+            echo "Nombre: " . htmlspecialchars($corre) . "<br>";
+            echo "Email: " . htmlspecialchars($pass) . "<br>";
         } else {
             echo "Por favor, complete todos los campos.";
         }
