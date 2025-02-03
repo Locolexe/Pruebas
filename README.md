@@ -1,5 +1,3 @@
-# E-Commerce
-Aplicacion Web para tienda Outlet
+# Seccion de Pruebas de Pablo
+Index ubicado en /codes/lo/index
 
-# Lenguajes a utilizar
-HTML,CSS,PHP,JAVASCRIPT, MYSQL
