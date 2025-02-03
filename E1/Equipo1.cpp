@@ -3,7 +3,7 @@ using namespace std; // Usa el espacio de nombres estándar
 //Vacios por base (9,14,20,28,38,49,56,59)
 // Definición de la estructura Nodo
 struct Nodo {
-int dato;
+
     Nodo* siguiente; // Puntero al siguiente nodo
 };
 
@@ -21,7 +21,7 @@ public:
     // Método para insertar un nuevo nodo al inicio de la lista
     void insertarInicio(int valor) {
         Nodo* nuevoNodo = new Nodo(); // Crea un nuevo nodo
-        nuevoNodo->dato= valor;
+
         nuevoNodo->siguiente = cabeza; // El siguiente del nuevo nodo es la cabeza actual
         cabeza = nuevoNodo; // La cabeza ahora es el nuevo nodo
     }
@@ -30,7 +30,7 @@ public:
     void mostrarLista() {
         Nodo* actual = cabeza; // Comienza desde la cabeza
         while (actual != nullptr) { // Recorre hasta el final de la lista
-            cout << actual->dato << "";
+
             actual = actual->siguiente; // Avanza al siguiente nodo
         }
         cout << endl; // Imprime una nueva línea al final
@@ -40,7 +40,7 @@ public:
     ~Lista() {
         Nodo* actual = cabeza; // Comienza desde la cabeza
         while (actual != nullptr) { // Recorre toda la lista
-            Nodo* temp = actual;
+
             actual = actual->siguiente; // Avanza al siguiente nodo
             delete temp; // Libera la memoria del nodo temporal
         }
@@ -51,7 +51,7 @@ public:
 int main() {
     Lista lista; // Crea una lista
     lista.insertarInicio(10); // Inserta el valor 10 al inicio
-    lista.insertarInicio(20);
+
     lista.insertarInicio(30); // Inserta el valor 30 al inicio
 
     cout << "Elementos de la lista: "; // Imprime un mensaje
