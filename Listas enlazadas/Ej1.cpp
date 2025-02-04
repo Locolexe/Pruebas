@@ -1,5 +1,5 @@
-#include <iostream>
-using namespace std;
+#include <iostream> //Libreria para entrada y salida
+using namespace std; // Obviar uso de std
 
 struct Nodo {
     int infor; // Dato que almacena el nodo
