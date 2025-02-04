@@ -20,7 +20,7 @@ struct ListaEnlazadaEstatica {
         libre = 0; 
         for (int i = 0; i < 9; ++i) {
             nodos[i].siguiente = i + 1; 
-            nodos[i].anterior = -1; // Inicializamos la lista de nodos libres (Solo dobles enlazada)
+            nodos[i].anterior = i-1; // Inicializamos la lista de nodos libres (Solo dobles enlazada)
         }
         nodos[9].siguiente = -1; // El último nodo libre no tiene siguiente
         nodos[9].anterior = -1; // El último nodo libre no tiene anterior (Solo dobles enlazada)
